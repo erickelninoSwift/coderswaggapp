@@ -18,7 +18,8 @@ class CategoryVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
         tableView.dataSource = self
         
         tableView.separatorStyle = .none
-       
+        tableView.showsHorizontalScrollIndicator = false
+        tableView.showsVerticalScrollIndicator = false
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

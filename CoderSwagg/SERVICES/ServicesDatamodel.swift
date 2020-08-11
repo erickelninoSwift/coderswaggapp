@@ -18,9 +18,57 @@ class services
     categorymodel(title: "DIGITAL", imageName: "digital")]
     
     
+    private let hats = [Product(title: "Devslops Logo Graphic beanie", price: "$18", ImageName: "hat01"),
+    Product(title: "Devslops Logo Graphic beanie", price: "$18", ImageName: "hat01"),
+    Product(title: "Devslops Logo Hat black", price: "$22", ImageName: "hat02"),
+    Product(title: "Devslops Logo hat white", price: "$23", ImageName: "hat03"),
+    Product(title: "Devslops Logo Graphic Snapback", price: "$46", ImageName: "hat04")]
+    
+    
+    private let hoodies = [Product(title: "Devslops logo Hoodie Grey", price: "$10", ImageName: "hoodie01"),
+    Product(title: "Devslops logo Hoodie Red", price: "$10", ImageName: "hoodie02"),
+    Product(title: "Devslops logo Hoodie yellow", price: "$20", ImageName: "hoodie03"),
+    Product(title: "Devslops logo Hoodie Black", price: "$17.5", ImageName: "hoodie04")]
+    
+    private let shirts = [Product(title: "Devslops logo shirts Grey", price: "$16", ImageName: "shirt01"),
+    Product(title: "Devslops logo shirts Red", price: "$10", ImageName: "shirt02"),
+    Product(title: "Devslops logo shirts yellow", price: "$10", ImageName: "shirt03"),
+    Product(title: "Devslops logo shirts Black", price: "$10", ImageName: "shirt014")]
+    
+    
+    private let digitals = [Product(title: "Devslops logo Hoodie Grey", price: "$16", ImageName: "digital01"),
+       Product(title: "Devslops logo digitals Red", price: "$10", ImageName: "digital02"),
+       Product(title: "Devslops logo digitals yellow", price: "$10", ImageName: "digital03"),
+       Product(title: "Devslops logo digitals Black", price: "$10", ImageName: "digital04")]
+    
+    
     func getAllcategory() ->[categorymodel]
     {
         return myCategory
     }
+    
+    
+    func getallitems(categorytitle : String) ->[Product]
+    {
+        switch categorytitle {
+        case "T-SHIRT":
+            return shirts
+            
+            case "HOODIES":
+            return hoodies
+            
+            case "HATS":
+            return hats
+            
+            case "DIGITAL":
+            return digitals
+            
+        default:
+            return shirts
+        }
+    }
+    
+    
+    
     
 }
