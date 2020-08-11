@@ -18,6 +18,7 @@
 		76138A4F24E1F32000498D59 /* ServicesDatamodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76138A4E24E1F32000498D59 /* ServicesDatamodel.swift */; };
 		76138A5124E2275900498D59 /* itemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76138A5024E2275900498D59 /* itemsCollectionViewCell.swift */; };
 		76138A5324E228F300498D59 /* product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76138A5224E228F300498D59 /* product.swift */; };
+		76138A5724E2D2D300498D59 /* productsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76138A5624E2D2D300498D59 /* productsCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		76138A4E24E1F32000498D59 /* ServicesDatamodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesDatamodel.swift; sourceTree = "<group>"; };
 		76138A5024E2275900498D59 /* itemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemsCollectionViewCell.swift; sourceTree = "<group>"; };
 		76138A5224E228F300498D59 /* product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product.swift; sourceTree = "<group>"; };
+		76138A5624E2D2D300498D59 /* productsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productsCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				76138A3324E1CF9100498D59 /* CategoryVC.swift */,
+				76138A5624E2D2D300498D59 /* productsCollectionViewController.swift */,
 			);
 			path = CONTROLLER;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				76138A3024E1CF9100498D59 /* AppDelegate.swift in Sources */,
 				76138A4C24E1EA7000498D59 /* categorymodel.swift in Sources */,
 				76138A3224E1CF9100498D59 /* SceneDelegate.swift in Sources */,
+				76138A5724E2D2D300498D59 /* productsCollectionViewController.swift in Sources */,
 				76138A4724E1DCFB00498D59 /* categoryTableViewCell.swift in Sources */,
 				76138A5124E2275900498D59 /* itemsCollectionViewCell.swift in Sources */,
 			);

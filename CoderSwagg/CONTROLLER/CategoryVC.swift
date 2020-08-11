@@ -38,6 +38,21 @@ class CategoryVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let currentProduct = services.myservicesInstance.getAllcategory()[indexPath.row]
+        
+        performSegue(withIdentifier: "segue", sender: currentProduct)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue"
+        {
+            let secondVC = segue.destination as! productsCollectionViewController
+            if let categorytopass = sender as? categorymodel
+            {
+                secondVC.poplateproductsforcategoryselected(Category: categorytopass)
+            }
+        }
     }
     
     
