@@ -16,6 +16,8 @@ class CategoryVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
        
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.separatorStyle = .none
        
     }
     
@@ -25,9 +27,18 @@ class CategoryVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:categoryTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! categoryTableViewCell
-        
+        let allcategories = services.myservicesInstance.getAllcategory()
+        let currentcategory = allcategories[indexPath.row]
+
+        cell.updatecategorycell(mycategory: currentcategory)
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    
 }
 

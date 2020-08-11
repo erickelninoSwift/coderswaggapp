@@ -12,10 +12,10 @@ class services
 {
     static let myservicesInstance = services()
     
-    private let myCategory = [categorymodel(title: "T-SHIRT", imageName: "shirts.png"),
-    categorymodel(title: "HOODIES", imageName: "hoodies.png"),
-    categorymodel(title: "HATS", imageName: "hats.png"),
-    categorymodel(title: "DIGITAL", imageName: "digital.png")]
+    private let myCategory = [categorymodel(title: "T-SHIRT", imageName: "shirts"),
+    categorymodel(title: "HOODIES", imageName: "hoodies"),
+    categorymodel(title: "HATS", imageName: "hats"),
+    categorymodel(title: "DIGITAL", imageName: "digital")]
     
     
     func getAllcategory() ->[categorymodel]

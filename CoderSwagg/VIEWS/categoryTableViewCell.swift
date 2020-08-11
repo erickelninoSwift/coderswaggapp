@@ -17,13 +17,14 @@ class categoryTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        layer.cornerRadius = 5.0
-        clipsToBounds = true
+        backgroundimageCell.layer.cornerRadius = 24.5
+        backgroundimageCell.clipsToBounds = true
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
+    func updatecategorycell(mycategory: categorymodel)
+    {
+        backgroundimageCell.image = UIImage(named: mycategory.imageName)
+        categoryName.text = mycategory.title
     }
     
     

@@ -36,7 +36,11 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="UlA-HR-qL1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="242"/>
+                                                    <rect key="frame" x="9" y="11" width="396" height="220"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="396" id="CtM-7N-4Ia"/>
+                                                        <constraint firstAttribute="height" constant="220" id="bKQ-X1-XGg"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsc-9e-D9a">
                                                     <rect key="frame" x="106" y="81" width="202" height="80"/>
@@ -50,12 +54,12 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="UlA-HR-qL1" firstAttribute="top" secondItem="oq5-d0-nb0" secondAttribute="top" id="3rL-9c-8dW"/>
-                                                <constraint firstAttribute="bottom" secondItem="UlA-HR-qL1" secondAttribute="bottom" id="K3F-ZK-fR5"/>
+                                                <constraint firstAttribute="trailing" secondItem="UlA-HR-qL1" secondAttribute="trailing" constant="9" id="1t6-MM-KW9"/>
+                                                <constraint firstItem="UlA-HR-qL1" firstAttribute="top" secondItem="oq5-d0-nb0" secondAttribute="top" constant="11" id="Ckp-eQ-gBK"/>
+                                                <constraint firstItem="UlA-HR-qL1" firstAttribute="leading" secondItem="oq5-d0-nb0" secondAttribute="leading" constant="9" id="NFE-EO-eD7"/>
+                                                <constraint firstAttribute="bottom" secondItem="UlA-HR-qL1" secondAttribute="bottom" constant="11" id="Uyv-zV-NNa"/>
                                                 <constraint firstItem="gsc-9e-D9a" firstAttribute="centerY" secondItem="oq5-d0-nb0" secondAttribute="centerY" id="f76-0j-Brm"/>
                                                 <constraint firstItem="gsc-9e-D9a" firstAttribute="centerX" secondItem="oq5-d0-nb0" secondAttribute="centerX" id="iSg-ND-MBl"/>
-                                                <constraint firstAttribute="trailing" secondItem="UlA-HR-qL1" secondAttribute="trailing" id="kbs-eB-Du2"/>
-                                                <constraint firstItem="UlA-HR-qL1" firstAttribute="leading" secondItem="oq5-d0-nb0" secondAttribute="leading" id="oXA-lu-wBo"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
