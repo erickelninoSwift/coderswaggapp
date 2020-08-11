@@ -48,9 +48,13 @@ class CategoryVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
         if segue.identifier == "segue"
         {
             let secondVC = segue.destination as! productsCollectionViewController
+            
+            
             if let categorytopass = sender as? categorymodel
             {
+                navigationItem.backBarButtonItem?.title = ""
                 secondVC.poplateproductsforcategoryselected(Category: categorytopass)
+                secondVC.navigationtitle = categorytopass.title
             }
         }
     }

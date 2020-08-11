@@ -13,6 +13,8 @@ class productsCollectionViewController: UIViewController , UICollectionViewDeleg
     @IBOutlet weak var titleCategory: UILabel!
     private (set) public var productsforcategory = [Product]()
 
+    var navigationtitle:String?
+    
     @IBOutlet weak var colelctionview: UICollectionView!
     
     
@@ -21,12 +23,21 @@ class productsCollectionViewController: UIViewController , UICollectionViewDeleg
 
         colelctionview.delegate = self
         colelctionview.dataSource = self
-        
+        titlebar()
+    }
+    
+    func titlebar()
+    {
+        if let titletodisplay = navigationtitle
+        {
+            navigationItem.title = titletodisplay
+        }
     }
     
     func poplateproductsforcategoryselected( Category: categorymodel)
     {
         productsforcategory = services.myservicesInstance.getallitems(categorytitle: Category.title)
+        
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
